@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formulario Inmobiliario con Formsubmit</title>
+</head>
+<body>
+    <h3>Información adicional sobre tu búsqueda</h3>
+    <p>Por favor completa estos datos para ayudarte mejor:</p>
+
+    <form action="https://formsubmit.co/ordunezjulio@gmail.com" method="POST">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com"><br><br>
+
+        <label for="servicio">¿Qué servicio buscas?</label><br>
+        <select id="servicio" name="servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="compra">Comprar propiedad</option>
+            <option value="venta">Vender propiedad</option>
+            <option value="renta">Rentar propiedad</option>
+            <option value="inversion">Inversión inmobiliaria</option>
+        </select><br><br>
+
+        <label for="presupuesto">Presupuesto aproximado (MXN):</label><br>
+        <input type="text" id="presupuesto" name="presupuesto" placeholder="Ej. 2,000,000"><br><br>
+
+        <label for="zona">Zona o colonia de interés:</label><br>
+        <input type="text" id="zona" name="zona" placeholder="Ej. Centro, Reforma, San Felipe del Agua"><br><br>
+
+        <label for="tiempo">¿En cuánto tiempo deseas concretar?</label><br>
+        <select id="tiempo" name="tiempo">
+            <option value="">Selecciona una opción</option>
+            <option value="1mes">Menos de 1 mes</option>
+            <option value="3meses">1 a 3 meses</option>
+            <option value="6meses">3 a 6 meses</option>
+            <option value="mas">Más de 6 meses</option>
+        </select><br><br>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
